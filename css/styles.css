@@ -1,0 +1,45 @@
+#to-left {
+	float: left;
+}
+  
+.header {
+	margin-top: 1%;
+}
+
+#to-right {
+	float: right;
+	margin-left: 2%;
+}
+
+hr {
+	margin-top: 45px;
+}
+
+.block {
+	margin-bottom: 25px;
+}
+
+.content_for_search {
+	margin-top: 30px;
+}
+
+.block div h1{
+	font-size: 38px;
+}
+
+.block div p {
+	font-size: 17px;
+}
+
+
+.titulo {
+	cursor: pointer;
+}
+
+.comment_area {
+	margin-top: 10px;
+}
+
+.highlight {
+	background-color: #FF0;
+}

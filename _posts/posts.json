@@ -1,9 +1,19 @@
 {
-  "posts": [
-    {
-      "title": "Estudiantes de @cognits aprenden a programar!",
-      "date": "2014,11,09",
-      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneancommodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnisdis parturient montes, nascetur ridiculus mus. Donec quam felis, ultriciesnec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enimjusto, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum feliseu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementumsemper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitoreu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverraquis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorperultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus egetcondimentum rhoncus, sem quam semper libero, sit amet adipiscing sem nequesed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatisfaucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"
-    }
-  ]
+    "posts": [ 
+        {
+            "title": "Billiards",
+            "date": "May 15 1995",
+            "content": "Snooker is a sport practiced precision driving with a cue ball a variable number in a table with board slate lined cloth, surrounded by bands of elastic material and small windows or without them. He had the Olympic letter for the 2004 Olympics, but did not become included in them."
+        },
+        {
+            "title": "Football",
+            "date": "June 25 2016",
+            "content": "Football, also known as football is a team sport played between two teams of eleven players each and some referees dealing with the rules are properly followed. It is widely considered the most popular sport in the world, as practiced by some 270 million people."
+        },
+        {
+            "title": "Galaxy",
+            "date": "July 25 1990",
+            "content": "A galaxy is a collection of stars, gas clouds, planets, cosmic dust, dark matter and energy together gravitationally. The amount of stars that form a galaxy is uncountable, from dwarf galaxies, with 10, to the giant galaxies, with 10 estrellas.Formando are part of a galaxy substructures such as nebulae, star clusters and multiple star systems."
+        }
+    ]
 }
