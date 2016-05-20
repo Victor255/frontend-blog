@@ -78,4 +78,4 @@ Now you have to look at your buddies code and leave your comments. Get on one of
 
 ## You can see my project here
 
-https://github.com/Victor255/frontend-blog.git
+file:///home/cognits2015/Desktop/frontend-blog/index.html
