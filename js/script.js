@@ -1,4 +1,13 @@
-// Javascript Code.f
+// Javascript Code.
+$(document).ready(function () {
+//this shows and hides the searchbox
+  $("#search").click(function(){
+    $("#input").toggle("slow");
+  });
+});
+
+
+// Javascript Code.
 $(document).ready(function () {
   // $.get("_posts/2014-11-09.json", function(data){
   //
@@ -9,12 +18,12 @@ $(document).ready(function () {
 
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
-    order_date(posts["posts"]);
 
-    function order_date(myArray) {
+    order_date(posts["posts"]); 
+    function order_date(myArray){
       var size = myArray.length;
-      for(var pass = 1; pass < size; pass++){ // outer loop
-        for( var up = 0; up < (size - pass); up++){ // inner loop
+      for(var pass = 1; pass < size; pass++){
+        for( var up = 0; up < (size - pass); up++){
           var down = up + 1;
           if(myArray[up]['date'] < myArray[down]['date']){
             swap(myArray, down, up);
@@ -30,51 +39,72 @@ $(document).ready(function () {
     }
 
     $("#titulo_1").html(posts['posts'][0]['title']);
-    $(".parrafo_1").html(posts['posts'][0]['content']);
-    $(".fecha_1").html(posts['posts'][0]['date']);
+    $(".paragraph_1").html(posts['posts'][0]['content']);
+    $(".date_1").html(posts['posts'][0]['date']);
 
     $("#titulo_2").html(posts['posts'][1]['title']);
-    $(".parrafo_2").html(posts['posts'][1]['content']);
-    $(".fecha_2").html(posts['posts'][1]['date']);
+    $(".paragraph_2").html(posts['posts'][1]['content']);
+    $(".date_2").html(posts['posts'][1]['date']);
 
     $("#titulo_3").html(posts['posts'][2]['title']);
-    $(".parrafo_3").html(posts['posts'][2]['content']);
-    $(".fecha_3").html(posts)['posts'][2]['date'];
+    $(".paragraph_3").html(posts['posts'][2]['content']);
+    $(".date_3").html(posts['posts'][2]['date']);
+
+    $("#titulo_4").html(posts['posts'][3]['title']);
+    $(".paragraph_4").html(posts['posts'][3]['content']);
+    $(".date_4").html(posts['posts'][3]['date']);
   });
 
-  $(".search_box").hide();
-  $(".drop_down_1").hide();
-  $(".drop_down_2").hide();
-  $(".drop_down_3").hide();
+  $(".post_1").hide();
+  $(".post_2").hide();
+  $(".post_3").hide();
+  $(".post_4").hide();
 
   $("#titulo_1").click(function() {
-    $(".drop_down_1").addClass("current");
+    $(".post_1").addClass("current");
     $(".current").toggle();
-    $(".drop_down_1").removeClass("current");
+    $(".post_1").removeClass("current");
   });
 
   $("#titulo_2").click(function() {
-    $(".drop_down_2").addClass("current");
+    $(".post_2").addClass("current");
     $(".current").toggle();
-    $(".drop_down_2").removeClass("current");
+    $(".post_2").removeClass("current");
   });
 
-  $("#titulo_3").click(function () {
-    $(".drop_down_3").addClass("current");
+  $("#titulo_3").click(function() {
+    $(".post_3").addClass("current");
     $(".current").toggle();
-    $(".drop_down_3").removeClass("current");
+    $(".post_3").removeClass("current");
   });
 
-  $("#comment_button_1").click(function() {
-    var comment = $("input[name=my_comment_1]").val();
+  $("#titulo_4").click(function() {
+    $(".post_4").addClass("current");
+    $(".current").toggle();
+    $(".post_4").removeClass("current");
+  });
+
+  $("#button_1").click(function() {
+    var comment = $("input[name=comment_1]").val();
     $("#comments_area_1").append("<p>" + comment + "</p>");
-    $("input[name=my_comment_1]").val("");
+    $("input[name=comment_1]").val("");
   });
 
-  $("#comment_button_2").click(function() {
-    var comment = $("input[name=my_comment_2]").val();
+  $("#button_2").click(function() {
+    var comment = $("input[name=comment_2]").val();
     $("#comments_area_2").append("<p>" + comment + "</p>");
-    $("input[name=my_comment_2]").val("");
+    $("input[name=comment_2]").val("");
   });
 
+  $("#button_3").click(function() {
+    var comment = $("input[name=comment_3]").val();
+    $("#comments_area_3").append("<p>" + comment + "</p>");
+    $("input[name=comment_3]").val("");
+  });
+
+  $("#button_4").click(function() {
+    var comment = $("input[name=comment_4]").val();
+    $("#comments_area_4").append("<p>" + comment + "</p>");
+    $("input[name=comment_4]").val("");
+  });
 });
